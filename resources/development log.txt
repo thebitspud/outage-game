@@ -1,0 +1,338 @@
+Remnants of the Outage - Development Log
+
+	-	-	-	-	-	-	-	-
+
+Version history:
+
+70807
+	Started code for 'Project Command'
+	Created JFrame and gameloop
+	Changed default font
+	Created key and mouse input managers
+	Implemented graphics importing and cropping
+	Added code for an interactive button
+	Added basic states
+	
+70810
+	Improved button code
+	Bug fixes
+	Optimized code
+	
+70811
+	Implemented experimental text code
+	Added computer background
+
+70812
+	Added 'paused' and 'settings' states
+	Improved interconnectivity of states
+	
+70814
+	Created a timer asset and FPS counter
+	Changed package declaration conventions
+	Organized and optimized code
+	Added resources and resource decay
+	Added timer and resource test code
+	Fixed start screen crashing bug
+	Added FPS toggle in settings menu
+	
+70816
+	Implemented code for basic entities
+		Added test code for items
+		Added test code for constructs
+		Added test code for mobile entities
+		Added code for a player class
+	Added basic player movement
+	
+70826
+	Implemented staggered movement
+	Added action delay indicator
+		Added toggle for indicator in settings
+	Added a basic tile system
+		Created a basic level
+	Added a coordinate grid
+		Implemented grid toggle
+		
+	Optimized code
+	Minor code modifications
+	Bugfixes
+	
+70903
+	Linked battery life to actions
+	Minor code changes
+	Optimized outdated resource code	
+	
+71202 (Resuming work on project after 3 months)
+	Fixed battery text bug
+	Changed energy expenditure values
+	
+	Implemented basic collisions
+	Now functions as a very simple game
+	
+71207
+	Entity system code overhaul
+	
+	Improved 'collision' system
+	Improved movement system
+	Fixed multiple bugs
+	
+71208
+	Improved action delay indicator
+	Implemented simple animations
+	Added basic HP system
+	
+	Added Rat mob and repair kit
+	Added spaghetticode.java
+	
+71209
+	Added movement boundaries
+	Fixed movement bugs
+	Improved largerat code
+	
+	Implemented HP and Energy bounds
+	Added power bank
+	Added basic rat AI
+	
+	Cleaned up hardcoded methods
+	Bugfixes
+	
+71210
+	Render code efficiency improvements
+	
+80101 - First 2018 Update
+	Added Player's Manual
+	
+	Added Crawler mob
+	Improved default mob and item methods
+	
+	Implemented game score
+	Changed commenting conventions
+	Implemented end conditions (out of battery/out of HP)
+
+80102
+	Added save files for game stats
+	Implemented code to retrieve high scores
+	
+	Created game display
+	Fixed TextButton alignment issues
+	
+	Added a stage class that controls entities, game difficulty, and progression
+	
+	Minor code revisions
+	Bug fixes
+	
+Alpha 0.1A Release - 80103
+	Standardized scorekeeping
+	
+	Added working stage progression
+	Added play again feature
+	
+	Added Mutant Rat mob
+	Added Roach mob
+	Small mob value and AI rework
+	
+	Updated file pathing to work as a .jar file
+	Added icon images
+	
+	Balance changes
+	
+	Project now known as 'Vanguard of Malignance'
+	
+Alpha 0.1B - 80104
+	Added next level indicator
+	Implemented scaling battery drain
+	Escape Key pauses the game
+	
+	Mob/item superclass overhauls
+		Moved default methods from separate classes into superclasses
+		Replaced damage and point value hardcode
+		Cleaned up unused code
+		Increased efficiency of AI
+	Reworked image file access
+	
+	Applied band-aid fix for bug causing mobs to exit the map
+	Fixed images in jar file
+	
+	Reintroduced the player's manual
+		Added mobs section
+		Added items section
+		Added credits
+		
+	Performance and quality-of-life changes
+	
+Alpha 0.1C - 80105
+	Improved button aesthetics and function
+	Added pseudoscrolling pages
+	Fixed bug with loading stats
+	
+	Updated player's manual
+		Added glossary supplement section to 'additional information'
+		Implemented about/backstory
+			docs.google.com/document/d/1zRnCVK9LJA0_81tUWrR1Bc8NrXuS6PJFqkrCdyj9woE
+		Added 'known bugs' to 'additional information'
+	
+Alpha 0.1D - 80105
+	Movement code overhaul
+		Moving SEV in opposite directions will cancel out instead of defaulting
+		SEV has buffered movement
+		Added default mob movement code
+		Mobs and items stack much less often
+			Added catch for exceptional cases
+			Mobs will usually avoid eachother
+	
+Alpha 0.2 Prerelease - 80106
+	Fixed mob movement glitches
+		Implemented 2-stage movement and buffering
+		Modified mob AI to completely remove stacking interactions
+	Fixed out of map crash bug
+	Removed or replaced large quantity of inefficient or unused code
+	
+	Added default floor tile
+		4 tile subtypes
+	Renders in tiles through a random generation sequence
+	
+		- 80108
+	Added the [-1] tile: wall
+		Implemented collisions with SEV and mobs
+	Code efficiency improvements
+		Added Game and Manager superclasses
+			Removed non-final static modifiers
+			greatly modified class hierarchy
+		Changed methods for accessing tile.contains
+		Standardized mob/item code
+		
+		- 80109
+	Fixed tile-based crash bug
+	Added walls/impassable terrain
+		SEV as well as mob/item collisions and avoidance
+	Continued to standardize class access methods changes
+	Implemented drifting though wall corners as a band-aid bug fix
+		
+		- 80110
+	Added filthy floor tile variant
+	Added gradual level contamination
+	Fixed game end info wiping
+	Changed SEV buffer system
+	Testing movement speed scaling with stage
+	
+Alpha 0.2A Release - 80112
+	Completed optimization with game/manager classes
+	Changed code for text and image buttons
+	
+	Fixed a few minor bugs
+	
+Alpha 0.2B - 80120
+	Bugfixes
+	
+	Changed mob rendering to be more consistent
+	Modified interactive button code
+	
+	Added 'scrap' which can be used for purchasing upgrades
+	Added upgrades menu
+	
+Alpha 0.2C - 80121
+	Added basic code for upgrades
+		Implemented speed upgrade
+		Implemented storage upgrade
+		Implemented battery upgrade
+	Added upgrade visual aid
+	Added in-game indicators
+	Upgrades now working as intended
+	
+Alpha 0.2D - 80122
+	Fixed upgrades not resetting bug
+	Added end-game cause of death message
+	Slightly modified game values
+	
+Alpha 0.3 Prerelease - 80126
+	Updated player manual
+		Modified additional info section
+		
+	Implemented armor purchase
+	Added text display for upgrades
+	Improved TextButton methods
+	
+Alpha 0.3A Release - 80313 - Back from break
+	Updated player manual
+		Improved item/mob sections
+			Added mob + item info display text
+		Reorganized the Basic Informational Guide
+			Added the "Gameplay Guide" section
+		Updated additional info section
+			
+		- 80318
+	Modified mob sprites
+	Added metal scrap item
+	Added electronic scrap item
+	Implemented scrap display in upgrades menu
+	
+Alpha 0.3B - 80319 - First new mob since Alpha 0.1A (80103)
+	Balanced upgrade costs
+	
+	Improved entity spawning algorithm
+		Replaced large portion of hardcode
+	Balanced spawning frequencies at all levels
+	Increased level cap
+		Improved scaling difficulty factor
+		Added third level of contamination
+	
+	Changed item sprites for visibility
+	Added Feeder mob
+		Primitive pathfinding AI
+		
+	Implemented WASD control scheme
+	
+Alpha 0.3C - 80320 - Project title changed to 'Remnants of the Outage'
+	Changed in-game display text for clarity
+	
+	Added upgrade kits and battery packs
+		Can be consumed with scrap to increase max HP/battery
+	Implemented capacity/chassis (max battery/HP) upgrades
+	Implemented repair purchase
+	Reworked upgrade code
+	
+	Balance changes
+	Minor bugfixes
+	
+Alpha 0.3D - 80320
+	Added Apex Feeder mob
+	Added Engine Component item
+	Slightly changed UI
+	
+	Massive code efficiency overhaul
+		Reduced system strain by a moderate amount
+
+	-	-	-	-	-	-	-	-
+
+Current version: Alpha 0.3D Release/80321
+		
+Planned Features and Future Goals (Order of priority):
+	Further performance improvements
+		Modify graphics engine
+		De-lag spawning algorithm
+
+	Save files for different maps [0.4 Release]
+	Improve keyboard shortcuts [0.4 Release]
+		
+	Better title screen [0.5 Release]
+	Sound effects and music [0.5 Release]
+	Multiple interconnected levels [0.5 Release]
+	
+	Actions and Abilities [0.6 Release]
+		Picking up items
+		Communicating with terminals
+		Weapons systems
+	HP system rework [0.6 Release]
+		Mob HP
+		Damage upgrade
+		Temporary invulnerability upon taking damage
+	
+	Adaptive terrain [0.6+]
+	Better mob AI [TBA]
+		Unit-unit interactions
+		Unit-specific properties/abilities
+	Improved sprites [TBA]
+	Story / lore [TBA]
+	
+	-	-	-	-	-	-	-	-
+	
+TheBitspud™ in affilition with Quiet Classroom 2017-2018
